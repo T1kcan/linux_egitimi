@@ -69,7 +69,7 @@ sudo mount -a
 
 ## 4. Verification
 ```bash
-echo "Hello from server" | sudo tee /srv/nfs_share/test.txt
+echo "Hello from server" | sudo tee /nfs/test.txt
 ls /mnt/nfs_client
 ```
 
