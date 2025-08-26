@@ -9,8 +9,8 @@ Create Serving Directory:
 ```bash
 sudo mkdir /nfs
 --------------
-chmod -R 755 /nfs
-chown nobody:nobody /nfs
+sudo chmod -R 755 /nfs
+sudo chown nobody:nobody /nfs
 ```
 Start NFS Server Processes:
 ```bash
