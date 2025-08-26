@@ -59,6 +59,7 @@ ls /mnt/nfs_client
 ### 3.3 Auto-Mount on Boot (Optional)
 Add to `/etc/fstab`:
 ```
+sudo vi /etc/fstab
 10.99.0.58:/nfs  /mnt/nfs_client  nfs  defaults  0  0
 ```
 
