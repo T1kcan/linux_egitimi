@@ -24,7 +24,7 @@ Start NFS Server Processes:
 # systemctl start nfs-lock
 # systemctl start nfs-idmap
 --------------
-nano /etc/exports
+sudo nano /etc/exports
 /nfs *(rw,sync,no_subtree_check,no_root_squash,no_all_squash,insecure)
 --------------
 sudo systemctl restart nfs-server
