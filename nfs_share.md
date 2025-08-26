@@ -60,7 +60,9 @@ ls /mnt/nfs_client
 Add to `/etc/fstab`:
 ```
 sudo vi /etc/fstab
+# add following line at the bottom of the file
 10.99.0.58:/nfs  /mnt/nfs_client  nfs  defaults  0  0
+sudo mount -a
 ```
 
 ---
