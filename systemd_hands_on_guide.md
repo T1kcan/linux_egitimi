@@ -66,7 +66,15 @@ journalctl -f -u nginx.service   # Follow logs live
 
 ## 6. Creating a Custom Service
 
-Assume we have an executable at `/usr/local/bin/myapp`.
+Assume we have an executable at `/usr/local/bin/myapp`:
+
+```bash
+#!/bin/bash
+while true; do
+    echo "Hello World"
+    sleep 1
+ done
+```
 
 ### Step 1: Create a Service File
 
