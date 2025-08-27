@@ -81,8 +81,8 @@ After=network.target
 Type=simple
 ExecStart=/usr/local/bin/myapp
 Restart=on-failure
-User=nobody
-Group=nogroup
+User=user
+Group=user
 
 [Install]
 WantedBy=multi-user.target
