@@ -189,7 +189,7 @@ sed -n 's/.*\([0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\).*/\1/p' a
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 - `sed` is powerful for text editing in pipelines.  
 - Use `sed -i` carefully (it modifies files in place).  
 - Combine with `grep`, `awk`, and regex for advanced text processing.  
