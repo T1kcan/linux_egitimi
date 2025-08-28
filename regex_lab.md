@@ -1,4 +1,4 @@
-# 🧑‍💻 Regular Expressions (Regex) Complete Hands-on Lab Guide
+# Regular Expressions (Regex) Complete Hands-on Lab Guide
 
 This lab will take you from **basic to advanced regex usage** step by step.  
 You can run all examples using `grep`, `egrep`, or within programming languages like Python/Perl.  
@@ -235,7 +235,7 @@ grep -E '^(?=.*[0-9])(?=.*[A-Z]).{8,}$' passwords.txt
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 - Regex is universal across tools like `grep`, `sed`, `awk`, Python, Java, etc.  
 - Mastering regex saves time in text parsing and automation.  
 - Always test patterns carefully to avoid false matches.  
