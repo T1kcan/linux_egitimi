@@ -50,17 +50,17 @@ EOF
 ```bash
 grep 'Ali' data.txt
 ```
-👉 Matches lines containing `Ali`.
+ Matches lines containing `Ali`.
 
 ```bash
 grep '^A' data.txt
 ```
-👉 Matches lines starting with `A`.
+ Matches lines starting with `A`.
 
 ```bash
 grep '0$' data.txt
 ```
-👉 Matches lines ending with `0`.
+ Matches lines ending with `0`.
 
 ---
 
@@ -69,17 +69,17 @@ grep '0$' data.txt
 ```bash
 grep '[0-9]' data.txt
 ```
-👉 Matches any digit.
+ Matches any digit.
 
 ```bash
 grep '^[A-Z]' data.txt
 ```
-👉 Matches lines starting with uppercase.
+ Matches lines starting with uppercase.
 
 ```bash
 grep '[aeiou]' data.txt
 ```
-👉 Matches lines containing vowels.
+ Matches lines containing vowels.
 
 ---
 
@@ -102,17 +102,17 @@ grep '[[:digit:]]' data.txt
 ```bash
 grep -E '[0-9]{2}' data.txt
 ```
-👉 Matches numbers with exactly 2 digits.
+ Matches numbers with exactly 2 digits.
 
 ```bash
 grep -E '[0-9]{2,}' data.txt
 ```
-👉 Matches numbers with 2 or more digits.
+ Matches numbers with 2 or more digits.
 
 ```bash
 grep -E '[0-9]{2,3}' data.txt
 ```
-👉 Matches numbers with 2 to 3 digits.
+ Matches numbers with 2 to 3 digits.
 
 ---
 
@@ -121,17 +121,17 @@ grep -E '[0-9]{2,3}' data.txt
 ```bash
 grep '.*@.*' data.txt
 ```
-👉 Matches email-like strings.
+ Matches email-like strings.
 
 ```bash
 grep -E 'a+' data.txt
 ```
-👉 Matches lines with one or more `a`.
+ Matches lines with one or more `a`.
 
 ```bash
 grep -E 'a?' data.txt
 ```
-👉 Matches lines with zero or one `a`.
+ Matches lines with zero or one `a`.
 
 ---
 
@@ -140,12 +140,12 @@ grep -E 'a?' data.txt
 ```bash
 grep -E '(Ali|Ayse)' data.txt
 ```
-👉 Matches either `Ali` or `Ayse`.
+ Matches either `Ali` or `Ayse`.
 
 ```bash
 grep -E '(com|org)$' data.txt
 ```
-👉 Matches domains ending in `.com` or `.org`.
+ Matches domains ending in `.com` or `.org`.
 
 ---
 
@@ -154,7 +154,7 @@ grep -E '(com|org)$' data.txt
 ```bash
 grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' data.txt
 ```
-👉 Matches email addresses.
+ Matches email addresses.
 
 ---
 
@@ -163,12 +163,12 @@ grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' data.txt
 ```bash
 grep -E '^[0-9]{3}-[0-9]{3}-[0-9]{4}$' data.txt
 ```
-👉 Matches U.S. style phone numbers.
+ Matches U.S. style phone numbers.
 
 ```bash
 grep -E '^\+?[0-9-]+$' data.txt
 ```
-👉 Matches international phone numbers.
+ Matches international phone numbers.
 
 ---
 
@@ -177,7 +177,7 @@ grep -E '^\+?[0-9-]+$' data.txt
 ```bash
 grep -E 'https?://[A-Za-z0-9./]+' data.txt
 ```
-👉 Matches `http://` and `https://` URLs.
+ Matches `http://` and `https://` URLs.
 
 ---
 
@@ -193,7 +193,7 @@ hello hello" > repeat.txt
 ```bash
 grep -E '([a-z]+) ' repeat.txt
 ```
-👉 Matches repeated words.
+ Matches repeated words.
 
 ---
 
@@ -202,7 +202,7 @@ grep -E '([a-z]+) ' repeat.txt
 ```bash
 grep -v 'Ali' data.txt
 ```
-👉 Prints all lines not containing `Ali`.
+ Prints all lines not containing `Ali`.
 
 ---
 
