@@ -173,7 +173,7 @@ awk 'BEGIN {OFS=";"} {print $1, $2, $3}' data.txt
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 - Use `awk` for parsing text, system monitoring, and log analysis.  
 - Combine `awk` with other tools (`grep`, `sort`, `uniq`) for powerful pipelines.  
 - For large automation scripts, `awk` can replace small Python/Perl programs.  
