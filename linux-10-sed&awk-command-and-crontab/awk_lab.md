@@ -43,12 +43,12 @@ EOF
 ```bash
 awk '{print $1}' data.txt
 ```
-👉 Prints the first column (names).
+ Prints the first column (names).
 
 ```bash
 awk '{print $1, $3}' data.txt
 ```
-👉 Prints the first and third columns (name + age).
+ Prints the first and third columns (name + age).
 
 ---
 
@@ -68,12 +68,12 @@ awk '{print NR, NF, $0}' data.txt
 ```bash
 awk '$3 > 30 {print $1, $2, $3}' data.txt
 ```
-👉 Prints people older than 30.
+ Prints people older than 30.
 
 ```bash
 awk '$3 <= 30 {print $0}' data.txt
 ```
-👉 Prints people age 30 or less.
+ Prints people age 30 or less.
 
 ---
 
@@ -103,7 +103,7 @@ If fields are separated by `:` (e.g., `/etc/passwd`):
 ```bash
 awk -F: '{print $1, $3}' /etc/passwd
 ```
-👉 Prints username and UID.
+ Prints username and UID.
 
 ---
 
@@ -113,7 +113,7 @@ awk -F: '{print $1, $3}' /etc/passwd
 ```bash
 df -h | awk 'NR==1 || $5+0 > 70 {print $0}'
 ```
-👉 Show header and partitions with >70% usage.
+ Show header and partitions with >70% usage.
 
 ### RAM Usage
 ```bash
@@ -124,7 +124,7 @@ free -m | awk 'NR==2 {printf "RAM Usage: %.2f%%\n", $3*100/$2}'
 ```bash
 top -bn1 | grep "Cpu(s)" | awk '{print $2 + $4}'
 ```
-👉 Shows CPU usage (user + system).
+ Shows CPU usage (user + system).
 
 ---
 
@@ -148,7 +148,7 @@ awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -nr | head
 ```bash
 awk '{printf "%-10s %-10s %d\n", $1, $2, $3}' data.txt
 ```
-👉 Nicely formatted table.
+ Nicely formatted table.
 
 ### Multiple Actions
 ```bash
@@ -159,7 +159,7 @@ awk '$3 > 30 {print $1 " is older than 30"} $3 <= 30 {print $1 " is 30 or younge
 ```bash
 awk 'BEGIN {OFS=";"} {print $1, $2, $3}' data.txt
 ```
-👉 Fields separated by `;`.
+ Fields separated by `;`.
 
 ---
 

@@ -45,13 +45,13 @@ EOF
 ```bash
 sed 's/Ali/Ahmet/' data.txt
 ```
-👉 Replaces first occurrence of `Ali` with `Ahmet`.
+ Replaces first occurrence of `Ali` with `Ahmet`.
 
 ### Replace All Occurrences
 ```bash
 sed 's/a/A/g' data.txt
 ```
-👉 Replaces all `a` with `A`.
+ Replaces all `a` with `A`.
 
 ---
 
@@ -70,19 +70,19 @@ sed -i 's/Mehmet/Murat/' data.txt
 ```bash
 sed '2d' data.txt
 ```
-👉 Deletes line 2.
+ Deletes line 2.
 
 ### Delete Line Range
 ```bash
 sed '2,3d' data.txt
 ```
-👉 Deletes lines 2 to 3.
+ Deletes lines 2 to 3.
 
 ### Delete Matching Pattern
 ```bash
 sed '/Ayse/d' data.txt
 ```
-👉 Deletes lines containing `Ayse`.
+ Deletes lines containing `Ayse`.
 
 ---
 
@@ -105,12 +105,12 @@ sed '2a\Another Person 60' data.txt
 ```bash
 sed -n '1,2p' data.txt
 ```
-👉 Prints only lines 1 and 2.
+ Prints only lines 1 and 2.
 
 ```bash
 sed -n '/Fatma/p' data.txt
 ```
-👉 Prints only lines with `Fatma`.
+ Prints only lines with `Fatma`.
 
 ---
 
@@ -134,7 +134,7 @@ sed 's/[0-9]//g' data.txt
 ```bash
 sed 's|/usr/bin|/bin|g' file.txt
 ```
-👉 Useful when `/` is inside the pattern.
+ Useful when `/` is inside the pattern.
 
 ### Multiple Commands
 ```bash
@@ -160,7 +160,7 @@ sed -f script.sed data.txt
 ```bash
 sed '/^#/d;/^$/d' /etc/ssh/sshd_config
 ```
-👉 Removes comment and empty lines.
+ Removes comment and empty lines.
 
 ### 2. Replace in Config File
 ```bash
