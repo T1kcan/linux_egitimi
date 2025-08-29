@@ -62,7 +62,7 @@ Welcome () {
     echo "Welcome to Linux Lessons $1 $2 $3"
 }
 
-Welcome Joe Matt Timothy
+Welcome $1 $2 $3
 ```
 
 - And execute it.
@@ -165,4 +165,5 @@ echo -e "After calling function:\nvar1: $var1\nvar2: $var2"
 ```bash
 chmod +x variables-scope.sh
 ./variables-scope.sh
+
 ```
