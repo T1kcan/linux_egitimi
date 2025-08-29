@@ -106,8 +106,8 @@ greet "Ada"
 
 ## 10) I/O redirection
 ```bash
-cmd > out.txt 2> err.log
-cmd | other
+# cmd > out.txt 2> err.log
+# cmd | other pipeline
 cat <<'EOF' > config.ini
 [user]
 name = "$USER"
@@ -208,6 +208,8 @@ while getopts "u:p:" opt; do
     p) pass=$OPTARG;;
   esac
 done
+echo "Kullanıcı: $user"
+echo "Şifre: $pass"
 ```
 - Parses command-line options `-u` and `-p`. `$OPTARG` stores the value.
 
